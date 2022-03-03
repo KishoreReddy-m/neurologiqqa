@@ -51,11 +51,12 @@ export const Settings: React.VFC = () => {
   const onSubmit = (data: BaseInformation) => {
     updateUserInformationMutation.mutate(data);
   };
-  const [mode, setMode]=useState(false)
+  const [mode, setMode] = useState(false);
   const { toggleThemeMode } = useContext(ThemeModeContext);
-  const handleThemeChange=() =>{
-    toggleThemeMode(setMode(!mode));
-  }
+  const handleThemeChange = () => {
+    setMode(!mode);
+    toggleThemeMode();
+  };
   const handleProfileImage = (event: any) => {
     let fileData = event.target.files[0];
     const fileType = event.target.files[0].type;
@@ -281,8 +282,12 @@ export const Settings: React.VFC = () => {
                 <Grid item xs={12} sm={6}>
                   <FormGroup>
                     <label>Deception</label>
-                    <FormControlLabel control={<Switch checked={mode}
-              onChange={handleThemeChange}/>} label="DarkMode" />
+                    <FormControlLabel
+                      control={
+                        <Switch checked={mode} onChange={handleThemeChange} />
+                      }
+                      label="DarkMode"
+                    />
                   </FormGroup>
                 </Grid>
               </Grid>

@@ -58,15 +58,13 @@ export const CreateProject: React.FC<Props> = (Props) => {
   const [open, setOpen] = useState(false);
   const [select, handleSelect] = useState(false);
   const history = useHistory();
-  const [selected, setSelected] = useState([]);
+  const [selected, setSelected] = useState<any[]>([]);
   const [user, SetUserDelete] = useState(false);
   const { handleSubmit, control } = useForm({
     mode: "onChange",
   });
 
-  const onSubmit = (data: any) => {
-    Props.addUser(data);
-  };
+  const onSubmit = (data: any) => {};
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -126,11 +124,17 @@ export const CreateProject: React.FC<Props> = (Props) => {
       <div>
         <CustomDialog
           isOpen={open}
-          title={<Typography  color={
-            theme.palette.mode === "light"
-              ? theme.palette.text.secondary
-              : 'none'
-          }>Start new AI Project</Typography>}
+          title={
+            <Typography
+              color={
+                theme.palette.mode === "light"
+                  ? theme.palette.text.secondary
+                  : "none"
+              }
+            >
+              Start new AI Project
+            </Typography>
+          }
           subTitle=""
           handleClose={handleDialogClose}
         >
@@ -150,7 +154,7 @@ export const CreateProject: React.FC<Props> = (Props) => {
                       label="Project Title"
                       variant="standard"
                       value={value}
-                      classes={ classes }
+                      classes={classes}
                       onChange={onChange}
                       fullWidth
                       error={!!error}

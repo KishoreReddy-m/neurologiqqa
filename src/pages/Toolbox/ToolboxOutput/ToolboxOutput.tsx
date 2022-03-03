@@ -13,10 +13,9 @@ import {
 import { useLocation } from "react-router-dom";
 import { PageLayout } from "src/components/PageLayout/PageLayout";
 import NeurologicIQToolboxImage from "src/assets/images/NeurologicIQToolboxImage.svg";
-import { CardContext } from "../../../contexts/CardsContext";
 import ShareImage from "src/assets/images/ShareImage.svg";
 import CreateToolboxHeader from "./CreateToolboxHeader";
-import DownloadFileImage from 'src/assets/images/DownloadFileImage.svg';
+import DownloadFileImage from "src/assets/images/DownloadFileImage.svg";
 const useStyles = makeStyles((theme: any) => ({
   card: {
     backgroundColor: theme.palette.secondary.main,
@@ -42,16 +41,13 @@ export const ToolboxOutput: React.FC<Props> = (Props) => {
               <CardContent>
                 <CardMedia className="media">
                   {" "}
-                  <img src={NeurologicIQToolboxImage} alt="media"/>
+                  <img src={NeurologicIQToolboxImage} alt="media" />
                 </CardMedia>
                 <Typography style={{ fontSize: "10px" }}>
                   {" "}
                   {location.state.card.cardContentTitle}
                 </Typography>
-                <Typography
-                  style={{ fontSize: "10px", }}
-                  color="textSecondary"
-                >
+                <Typography style={{ fontSize: "10px" }} color="textSecondary">
                   {" "}
                   {location.state.card.cardContent}
                 </Typography>
@@ -64,7 +60,7 @@ export const ToolboxOutput: React.FC<Props> = (Props) => {
             <CardHeader
               action={
                 <IconButton aria-label="settings">
-                  <img src={ShareImage}/>
+                  <img src={ShareImage} />
                 </IconButton>
               }
               title="Input & Output Machine learning Use Case"
@@ -113,7 +109,7 @@ export const ToolboxOutput: React.FC<Props> = (Props) => {
             </CardContent>
             <div className="downloadfile">
               <div className="">
-                <img src={DownloadFileImage}/>
+                <img src={DownloadFileImage} />
               </div>
               <div className="">
                 <Typography sx={{ mb: 0 }} style={{ fontSize: "14px" }}>
@@ -121,7 +117,7 @@ export const ToolboxOutput: React.FC<Props> = (Props) => {
                 </Typography>
                 <Typography
                   sx={{ mb: 1 }}
-                  style={{ fontSize: "10px"}}
+                  style={{ fontSize: "10px" }}
                   color="secondary"
                 >
                   39Mb
@@ -130,7 +126,7 @@ export const ToolboxOutput: React.FC<Props> = (Props) => {
             </div>
             <div className="downloadfile">
               <div className="">
-              <img src={DownloadFileImage}/>
+                <img src={DownloadFileImage} />
               </div>
               <div className="">
                 <Typography sx={{ mb: 0 }} style={{ fontSize: "14px" }}>
@@ -157,7 +153,6 @@ export const ToolboxOutput: React.FC<Props> = (Props) => {
                   frameBorder="0"
                   allow="accelerometer, autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  
                 ></iframe>
               </CardMedia>
             </CardContent>

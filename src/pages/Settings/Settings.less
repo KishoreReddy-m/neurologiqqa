@@ -1,0 +1,46 @@
+.input-type-file {
+  width: 116px;
+  height: 116px;
+
+  background: #324b67;
+  border: 3px dashed #d1ff24;
+  border-radius: 50%;
+  position: relative;
+  font-size: 12px;
+  color: #fff;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  span {
+    &:first-child {
+      font-size: 26px;
+    }
+
+    display: block;
+    text-align: center;
+  }
+
+  div {
+    margin-top: 10px;
+  }
+
+  input {
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    left: -3px;
+    position: absolute;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  div.header {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,35 @@
+#root .root {
+  height: 100vh;
+  display: flex;
+  z-index: 2;
+  position: relative;
+  &.root-conatainer {
+    max-width: 100% !important;
+    & > .MuiBox-root {
+      width: 100%;
+    }
+    main {
+      width: 100%;
+      & > .MuiGrid-container {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#webpack-dev-server-client-overlay {
+  display: none;
+}
+.background-image {
+  position: fixed;
+  // background-color: #171934;
+  width: 100%;
+  height: 100vh;
+  background-size: 80%;
+  background-image: url("../src/assets/images/MainbackgroundImage.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  z-index: 1;
+}

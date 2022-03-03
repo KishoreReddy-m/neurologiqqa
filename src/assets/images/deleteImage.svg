@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39.5" height="39.5" viewBox="0 0 39.5 39.5">
+  <g id="Group_10502" data-name="Group 10502" transform="translate(-287.948 -720.5)">
+    <g id="Group_79" data-name="Group 79" transform="translate(287.948 720.5)">
+      <g id="Ellipse_48" data-name="Ellipse 48" transform="translate(0)" fill="#d1ff24" stroke="#66d195" stroke-width="2" stroke-dasharray="0 0">
+        <circle cx="19.75" cy="19.75" r="19.75" stroke="none"/>
+        <circle cx="19.75" cy="19.75" r="18.75" fill="none"/>
+      </g>
+    </g>
+    <text id="Store" transform="matrix(0.996, -0.087, 0.087, 0.996, 304.499, 748.605)" fill="#1e3958" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+{
+  "name": "aimiq",
+  "version": "0.1.0",
+  "private": true,
+  "keywords": [],
+  "dependencies": {
+    "@craco/craco": "^6.4.3",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/material": "^5.2.7",
+    "@mui/styles": "^5.2.3",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.0",
+    "@types/material-ui": "^0.21.12",
+    "@types/node": "^16.11.19",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-slick": "^0.23.8",
+    "axios": "^0.25.0",
+    "classnames": "^2.3.1",
+    "craco-less": "^2.0.0",
+    "d3": "^6.7.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-dropzone": "^12.0.1",
+    "react-flow-renderer": "^9.7.4",
+    "react-hook-form": "^7.0.0",
+    "react-query": "^3.34.12",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "5.0.0",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.0.6",
+    "typescript": "^3.9.4",
+    "web-vitals": "^2.1.2"
+  },
+  "scripts": {
+    "start": "craco  start",
+    "build": "craco  build",
+    "test": "craco  test",
+    "eject": "craco  eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/d3": "^7.1.0",
+    "@types/d3-format": "^2.0.0",
+    "@types/react-router-dom": "^5.1.6",
+    "d3-format": "^3.0.0",
+    "mini-css-extract-plugin": "~2.5.0"
+  }
+}

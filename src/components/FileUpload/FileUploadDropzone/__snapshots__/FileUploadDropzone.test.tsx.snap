@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FileUploadDropzone /> should match snapshot 1`] = `
+<div>
+  <div
+    class="drop-zone-styles"
+    tabindex="0"
+  >
+    <input
+      accept="application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document, application/vnd.openxmlformats-officedocument.wordprocessingml.template, application/vnd.ms-word.document.macroEnabled.12, application/vnd.ms-word.template.macroEnabled.12, application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.openxmlformats-officedocument.spreadsheetml.template, application/vnd.ms-excel.sheet.macroEnabled.12, application/vnd.ms-excel.template.macroEnabled.12, application/vnd.ms-excel.addin.macroEnabled.12, application/vnd.ms-excel.sheet.binary.macroEnabled.12, application/vnd.ms-powerpoint, application/vnd.openxmlformats-officedocument.presentationml.presentation, application/vnd.openxmlformats-officedocument.presentationml.template, application/vnd.openxmlformats-officedocument.presentationml.slideshow, application/vnd.ms-powerpoint.addin.macroEnabled.12, application/vnd.ms-powerpoint.presentation.macroEnabled.12, application/vnd.ms-powerpoint.template.macroEnabled.12, application/vnd.ms-powerpoint.slideshow.macroEnabled.12, application/vnd.visio, application/pdf, application/postscript , audio/mpeg, audio/aac, audio/wav, audio/flac, image/tiff, image/gif, image/png, image/x-panasonic-raw, video/mp4, video/x-msvideo, video/quicktime , video/x-ms-wmv "
+      autocomplete="off"
+      multiple=""
+      style="display: none;"
+      tabindex="-1"
+      type="file"
+    />
+    <button
+      class="ui small circular icon inverted secondary left labeled button p-os-button secondary-padding"
+      type="button"
+    >
+      <i
+        aria-hidden="true"
+        class="icon pos upload"
+      />
+      UploadFiles
+    </button>
+  </div>
+  <div
+    class="drop-zone-info"
+  >
+    <span
+      class=""
+    >
+      FileSizeLimit
+    </span>
+    <br />
+    <span
+      class=""
+    >
+      SupportedFileTypes
+    </span>
+  </div>
+</div>
+`;

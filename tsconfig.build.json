@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "esModuleInterop": true,
+    "types": ["node", "jest"],
+    "sourceMap": true,
+    "noEmitOnError": true,
+    "target": "es6",
+    "module": "esnext",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "declarationMap": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": false,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false
+  },
+  "exclude": [
+    "**/*.test.tsx",
+    "node_modules",
+    "**/node_modules",
+    "build",
+    "**/build"
+  ]
+}

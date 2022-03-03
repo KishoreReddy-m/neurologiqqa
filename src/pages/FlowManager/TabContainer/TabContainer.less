@@ -1,0 +1,23 @@
+& {
+  .reactflow-wrapper {
+    .niq-node {
+      line-height: 30px;
+      img {
+        pointer-events: none;
+        position: relative;
+        top: 8px;
+      }
+    }
+    .selectable {
+      max-width: 100px;
+      border-radius: 0;
+      border: 0;
+      // border-left: #d1ff24 3px solid;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+      &.selected {
+        box-shadow: rgb(0 0 0 / 20%) 0px 11px 15px -7px, rgb(0 0 0 / 14%) 0px 24px 38px 3px, rgb(0 0 0 / 12%) 0px 9px 46px 8px;
+      }
+    }
+  }
+}

@@ -20,16 +20,15 @@ import CustomDialog from "src/common/CustomDialog";
 import makeStyles from "./ProjectStyles";
 import { useHistory } from "react-router-dom";
 type Props = {
-  projectData: any[];
-  deleteUser: () => void;
-  users: any;
+  projectData?: any[];
+  deleteUser?: () => void;
+  users?: any[];
 };
 const ProjectList: React.FC<Props> = (Props) => {
   const history = useHistory();
-  const classes = makeStyles();
+  const classes: any = makeStyles();
   const [open, setOpen] = useState(false);
   const [projectId, setProjectId] = useState(0);
-  console.log('Props"--', Props.users);
 
   const handleClickOpen = (id: number) => {
     setProjectId(id);
@@ -97,9 +96,9 @@ const ProjectList: React.FC<Props> = (Props) => {
     <>
       <Grid container spacing={2}>
         {Props.users &&
-          Props.users.map((project, i) => {
+          Props.users.map((project: any, i) => {
             return (
-              <Grid item xs={12}>
+              <Grid item xs={12} key={i}>
                 <Card sx={{ minWidth: 275 }}>
                   <CardContent>
                     <Grid container spacing={2}>

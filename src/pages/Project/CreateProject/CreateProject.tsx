@@ -48,13 +48,13 @@ function getStyles(name: string, personName: string[], theme: Theme) {
   };
 }
 type Props = {
-  theme: any;
-  id: string;
-  color: any;
+  theme?: any;
+  id?: string;
+  color?: any;
 };
 export const CreateProject: React.FC<Props> = (Props) => {
   const theme = useTheme();
-  const classes = makeStyles();
+  const classes: any = makeStyles();
   const [open, setOpen] = useState(false);
   const [select, handleSelect] = useState(false);
   const history = useHistory();
@@ -223,7 +223,7 @@ export const CreateProject: React.FC<Props> = (Props) => {
                         style={getStyles(name, selected, theme)}
                       >
                         <ListItemIcon>
-                          <img src={OwnerImage} />
+                          <img alt="" src={OwnerImage} />
                         </ListItemIcon>
                         {/* <ListItemText>{name}</ListItemText> */}
                       </MenuItem>
@@ -238,7 +238,6 @@ export const CreateProject: React.FC<Props> = (Props) => {
                               ? theme.palette.primary.main
                               : theme.palette.text.secondary
                           }
-                          id="test"
                         />
                         {/* <img
                                         src={AddUserImage}

@@ -4,7 +4,12 @@ import { makeStyles } from "@mui/styles";
 import {
   Typography,
   Divider,
-  Dialog,DialogContent,DialogActions,DialogTitle, DialogContentText, Container
+  Dialog,
+  DialogContent,
+  DialogActions,
+  DialogTitle,
+  DialogContentText,
+  Container,
 } from "@mui/material";
 import CloseImage from "../../assets/images/CloseImage.svg";
 
@@ -24,15 +29,14 @@ export interface DialogTitleProps {
   onClose: () => void;
 }
 interface Props {
-    children: any;
-    title:string;
-    handleClose:()=>void;
-    isOpen:boolean;
-    subTitle:string;
-  }
+  children: any;
+  title: React.ReactNode | string;
+  handleClose: () => void;
+  isOpen: boolean;
+  subTitle: string;
+}
 const CustomDialogTitle = (props: DialogTitleProps) => {
   const { children, onClose, ...other } = props;
-  const classes = useStyles();
   return (
     <DialogTitle
       {...other}
@@ -52,7 +56,13 @@ const CustomDialogTitle = (props: DialogTitleProps) => {
     </DialogTitle>
   );
 };
-export const CustomDialog: React.FC<Props> = ({children, handleClose,isOpen,subTitle,title}) => {
+export const CustomDialog: React.FC<Props> = ({
+  children,
+  handleClose,
+  isOpen,
+  subTitle,
+  title,
+}) => {
   const classes = useStyles();
   return (
     <>
@@ -67,10 +77,7 @@ export const CustomDialog: React.FC<Props> = ({children, handleClose,isOpen,subT
         aria-labelledby="customized-dialog-title"
         open={isOpen}
       >
-        <CustomDialogTitle
-          id="customized-dialog-title"
-          onClose={handleClose}
-        >
+        <CustomDialogTitle id="customized-dialog-title" onClose={handleClose}>
           <Typography style={{ margin: "11px" }}>{title}</Typography>
         </CustomDialogTitle>
         <Divider></Divider>
@@ -78,9 +85,7 @@ export const CustomDialog: React.FC<Props> = ({children, handleClose,isOpen,subT
           <DialogContentText>{subTitle}</DialogContentText>
           {children}
         </DialogContent>
-        <DialogActions>
-          
-        </DialogActions>
+        <DialogActions></DialogActions>
       </Dialog>
     </>
   );

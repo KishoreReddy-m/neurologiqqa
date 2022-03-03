@@ -71,20 +71,8 @@ export const Project: React.FC = (Props) => {
   };
   return (
     <div>
-      <PageLayout
-        header={
-          <CreateProject
-            handleCancel={handleCancel}
-            open={open}
-            addUser={addUser}
-          />
-        }
-      >
-        <ProjectList
-          users={users}
-          updateUser={updateUser}
-          deleteUser={deleteUser}
-        />
+      <PageLayout header={<CreateProject />}>
+        <ProjectList users={users} />
       </PageLayout>
     </div>
   );
